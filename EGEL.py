@@ -25,10 +25,10 @@ class Model():
         self.NFscaling_facor=None
         self.__embeddings = None
 
-    def fit_to_corpus(self, region_len,context_len):
-        self.__fit_to_corpus(region_len,context_len)
+    def fit(self, region_len,context_len):
+        self.__fit(region_len,context_len)
         self.__build_graph()
-    def __fit_to_corpus(self, region_len,context_len):         
+    def __fit(self, region_len,context_len):         
         self.context_size=context_len
         self.region_size=region_len
         
