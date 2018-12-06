@@ -8,16 +8,16 @@ If you use this code in your research, please refer to this paper “Embedding G
 
 # How to run this code?
 
->>> import EGEL
->>> model = EGEL.Model(embedding_size=50, min_occurrences=1, learning_rate=0.5, batch_size=1024, scaling_factor=0.01, cat_weight=1)
+import EGEL
+model = EGEL.Model(embedding_size=50, min_occurrences=1, learning_rate=0.5, batch_size=1024, scaling_factor=0.01, cat_weight=1)
 
 #scaling_factor between 0-1 when scaling_factor=0 the model use NF only and scaling_factor=1 the model use tags only
 
 #input data files
->>> Txt_file = 'textual_Features.txt' 
+Txt_file = 'textual_Features.txt' 
 #the textual data file must be in the form of “region_id  term_id  value\n”
 
->>> NF_file = 'Numerical_Features.txt'
+NF_file = 'Numerical_Features.txt'
 #the numerical data file must be in the form of “region_id  feature_id  value\n”
 
 >>> Cat_file = 'Categorical_Features.txt'
