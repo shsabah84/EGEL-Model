@@ -23,7 +23,10 @@ NF_file = 'Numerical_Features.txt'
 
 Cat_file = 'Categorical_Features.txt'
 #the categorical data file must be in the form of “region_id  feature_id \n”
-    
+
+
+#insert the number of features
+
 region_len=200000 #number of regions or entities
 
 NF_len=4 #number of numerical features
