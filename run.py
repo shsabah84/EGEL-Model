@@ -14,7 +14,7 @@ NF_len=4 #number of numerical features
 cat_len=180 #number of categories
 vocab_len=100000 #number of terms in the corpus
 
-model.fit_to_corpus(region_len,NF_len+cat_len+vocab_len) #context length = NF_len+cat_len+vocab_len
+model.fit(region_len,NF_len+cat_len+vocab_len) #context length = NF_len+cat_len+vocab_len
 num_epochs=30 #number of iterations
 model.train(num_epochs,Txt_file,NF_file,Cat_file)
 
