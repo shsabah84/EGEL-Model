@@ -1,8 +1,4 @@
 from __future__ import division
-import numpy
-from numpy import linalg
-from collections import Counter, defaultdict
-import os
 from random import shuffle
 import tensorflow as tf
 import numpy as np
@@ -173,16 +169,7 @@ class Model():
                     print('cat total loss=',catl)                    
                     print('total loss=',tloss)
                     
-
                 
-                del(batches)
-                del(batch_index)
-                del(batch)
-                del(i_s)
-                del(j_s)
-                del(counts)
-                del(feed_dict)
-                gc.collect()
             self.__embeddings = self.__combined_embeddings2.eval()
             print('memory after the embedding:',psutil.virtual_memory())
             print('priniting on a file.........')
