@@ -11,7 +11,7 @@ import EGEL
 
 model = EGEL.Model(embedding_size=50, learning_rate=0.5, batch_size=1024, scaling_factor=0.01, cat_weight=1)
 
-model.fit_to_corpus(region_len,NF_len+cat_len+vocab_len)
+model.fit(region_len,NF_len+cat_len+vocab_len)
 
 model.train(num_epochs=30,Txt_file,NF_file,Cat_file)
 
