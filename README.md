@@ -32,7 +32,7 @@ cat_len=180 #number of categories
 
 vocab_len=100000 #number of terms in the corpus
 
-model.fit_to_corpus(region_len,context_len+NF_len+cat_len) #context_len=NF_len+cat_len+vocab_len
+model.fit_to_corpus(region_len,NF_len+cat_len+vocab_len) #context_len=NF_len+cat_len+vocab_len
 
 num_epochs=30
 
