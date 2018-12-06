@@ -16,7 +16,7 @@ class NotFitToCorpusError(Exception):
     pass
 
 class Model():
-    def __init__(self, embedding_size, scaling_factor=3/4, cooccurrence_cap=100, batch_size=512, learning_rate=0.05, cat_weight=1):
+    def __init__(self, embedding_size, scaling_factor=0.01, batch_size=512, learning_rate=0.05, cat_weight=1):
         self.embedding_size = embedding_size
         self.scaling_factor = scaling_factor
         self.batch_size = batch_size
