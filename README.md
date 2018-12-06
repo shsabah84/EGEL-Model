@@ -12,7 +12,7 @@ import EGEL
 
 model = EGEL.Model(embedding_size=50, min_occurrences=1, learning_rate=0.5, batch_size=1024, scaling_factor=0.01, cat_weight=1)
 
-#scaling_factor between 0-1 when scaling_factor=0 the model use NF only and scaling_factor=1 the model use tags only
+#scaling_factor between 0-1 when scaling_factor=0 the model use the Numerical Features only and scaling_factor=1 the model use the Textual Features only
 
 #input data files
 
