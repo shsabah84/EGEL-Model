@@ -100,7 +100,7 @@ class Model():
             print('NF loss shape',self.__NF_loss.shape)
             
             ###### Categorical features part          
-            catembedding_product = tf.square(tf.sqrt(tf.reduce_sum(tf.square(tf.subtract(focal_embedding, context_embedding)),1))) 
+            catembedding_product = tf.reduce_sum(tf.square(tf.subtract(focal_embedding, context_embedding)),1) 
             cat_single_losses = tf.multiply(self.__cat_input, catembedding_product)#mask
             self.__csl=cat_single_losses
             print('cat_single_losses.shape=',cat_single_losses.shape)
