@@ -4,7 +4,7 @@ This project provides the code of EGEL (Embedding Geographic Locations), a model
 
 This implementation uses Python and TensorFlow (a "library for numerical computation using data flow graphs" by Google). You can use the sample of the data to run the code, however, the results reported in the paper are based on larger datasets. 
 
-If you use this code in your research, please refer to this paper “Embedding Geographic Locations for Modelling the Natural Environment using Flickr Tags and Structured Data” by Shelan S. Jeawak, Christopher B. Jones, and Steven Schockaert (2018). 
+If you use this code in your research, please refer to this paper “Embedding Geographic Locations for Modelling the Natural Environment using Flickr Tags and Structured Data” by Shelan S. Jeawak, Christopher B. Jones, and Steven Schockaert, ECIR 2019. 
 
 # How to run this code?
 import EGEL
